@@ -9,6 +9,7 @@
 # Ignore all PDFs, except archived/images
 *.pdf
 !**/archive/**/*.pdf
+!**/versions/**/*.pdf
 !**/images/**/*.pdf
 
 # LaTeX build
