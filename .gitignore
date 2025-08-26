@@ -1,0 +1,50 @@
+# Various dirs
+**/princeton-theme/
+**/out/
+**/output/
+**/build/
+**/tmp/
+**/aux/
+
+# Ignore all PDFs, except archived/images
+*.pdf
+!**/archive/**/*.pdf
+!**/images/**/*.pdf
+
+# LaTeX build
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lot
+*.lof
+
+# Beamer-specific
+*.nav
+*.snm
+*.vrb
+
+# Intermediate / backup files
+*.dvi
+*.xdv
+*.ps
+*.backup
+*.bak
+*.sav
+
+# latexmk generated directories
+_latexmk/
+
+# OS / editor
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

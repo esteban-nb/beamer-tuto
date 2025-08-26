@@ -1,0 +1,159 @@
+%!LW recipe=lualatex
+
+\makeatletter
+\providecommand*{\input@path}{}
+\g@addto@macro\input@path{{./princeton-theme}}
+\makeatother
+
+\documentclass[aspectratio=169]{beamer}
+
+\input{preamble.tex}
+
+\begin{document}
+
+% --------
+% Cover Slide
+% --------
+\begin{frame}[plain]
+  \centering
+  \vspace*{\fill}
+
+  {\Huge\bfseries\inserttitle\par}
+  \vspace{0.5cm}
+  {\Large\insertauthor\par}
+  \vspace{0.3cm}
+  {Supervisor: J\"urgen Hackl\par}
+  \vspace{0.5cm}
+
+  % --- Contents Box ---
+  \begin{tcolorbox}[contentsbox]
+    \begin{tabbing}
+      \hspace{1.5cm} \= \kill
+      \hyperlink{first-part}{\textbf{I.} \quad Entrée} \\
+      \hyperlink{second-part}{\textbf{II.} \quad Plat} \\
+      \hyperlink{third-part}{\textbf{III.} \quad Dessert} \\
+    \end{tabbing}
+  \end{tcolorbox}
+
+  \vspace*{\fill}
+  {\large\insertdate\par}
+\end{frame}
+
+
+% ------
+% Entree
+% ------
+\begin{frame}[label=first-part]
+\frametitle{Entr\'ee}
+
+  
+  \begin{columns}[T]
+    \column{.5\textwidth}
+    \begin{alertblock}{Note}
+      This is an example slide with some of the \alert{\LaTeX~beamer functionalities!}
+    \end{alertblock}
+
+    Here is some normal text.
+
+    \begin{itemize}
+    \item item a
+    \item item b
+    \end{itemize}
+
+    \begin{enumerate}
+    \item item 1
+    \item item 2
+    \end{enumerate}
+    % 
+    \[
+      x^{2}=\exp{y}
+    \]
+
+    \begin{block}{Blocks}
+      If necessary use \texttt{alertblock}, \texttt{block} or \texttt{exampleblock} for \alert{highlighting} content.
+    \end{block}
+    
+    \column{.5\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,height=.85\textheight]{example-image-a}
+  \end{columns}
+
+\end{frame}
+
+% ----
+% Plat
+% ----
+\begin{frame}[label=second-part]
+\frametitle{Plat}
+
+  \begin{enumerate}
+    \item \textbf{Blablabla} \vspace{0.5em}
+    \item \textbf{Blablabla} \vspace{0.5em}
+    \item \textbf{Blablabla} \vspace{0.5em}
+  \end{enumerate}
+  
+  \vfill
+  \begin{alertblock}{}
+  \normalsize
+  \textbf{Note.} Nam vulputate venenatis suscipit. Quisque auctor metus odio, ut consectetur turpis efficitur at. Donec in risus eu elit pretium varius ut eu purus. Nullam eu tellus felis. Vivamus semper, elit sed tristique malesuada, dui lectus lacinia nunc, sed finibus ligula orci non nisi. Nulla vel diam dolor. Nunc porta nec leo et pretium. Sed suscipit ex sapien, quis convallis nisi mollis sit amet.
+  \end{alertblock}
+\end{frame}
+
+% -------
+% Dessert
+% -------
+\begin{frame}[label=third-part]
+\frametitle{Dessert}
+ 
+  \begin{columns}[T]
+    \column{.5\textwidth}
+
+    \begin{alertblock}{Limitations / Future Work}
+      % List any limitations or future work mentioned in the paper
+      \begin{itemize}
+      \item 
+      \item 
+      \item 
+      \end{itemize}
+    \end{alertblock}
+
+
+    \begin{block}{Data}
+      % Three main take away messages for future research at CIS
+      \begin{enumerate}
+      \item 
+      \item 
+      \item 
+      \end{enumerate}
+    \end{block}   
+    
+    \column{.5\textwidth}
+
+    \begin{exampleblock}{References}
+      % Top five cited references in the paper
+      \begin{enumerate}
+      \item 
+      \item 
+      \item
+      \item
+      \item
+      \end{enumerate}
+    \end{exampleblock}
+
+
+    \begin{exampleblock}{Cited by}
+      % Top five papers who citing this paper
+      \begin{enumerate}
+      \item 
+      \item 
+      \item
+      \item
+      \item
+      \end{enumerate}
+    \end{exampleblock}
+  \end{columns}
+
+\end{frame}
+
+
+\end{document}

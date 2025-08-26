@@ -1,0 +1,70 @@
+\graphicspath{{images/}}
+
+% ==== Theme and Fonts ====
+\usetheme{princeton}
+\usefonttheme{professionalfonts}
+
+\setsansfont{FiraSans}[
+    Extension      = .otf,
+    UprightFont    = *-Regular,
+    ItalicFont     = *-Italic,
+    BoldFont       = *-Bold,
+    BoldItalicFont = *-BoldItalic
+]
+\setmonofont{FiraMono}[
+    Extension      = .otf,
+    UprightFont    = *-Regular,
+    BoldFont       = *-Bold
+]
+
+% ==== Imports ====
+\usepackage{amsmath, bm}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[most]{tcolorbox}
+
+% ==== Contents Box ====
+\tcbset{
+  contentsbox/.style={
+    enhanced,
+    sharp corners,
+    colback=white,
+    borderline={0.5pt}{0pt}{black},
+    width=0.6\textwidth,
+    halign=center,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    center title,
+    title=Today's Contents,
+    fonttitle=\bfseries\large,
+  }
+}
+
+% ==== Bearmer style ====
+\setbeamercovered{transparent}
+
+% ==== Metadata Footers (from Princeton theme) ====
+\title{Meeting Presentation}
+\author{Est\'eban Nocet-Binois}
+\date{\today}
+\authorfooter{Est\'eban Nocet-Binois}
+\titlefooter{Research Update}
+\affiliationfooter{Princeton University}
+\eventfooter{CIS, Princeton University}
+\datefooter{Compiled in \today}
+
+% ==== Hyperref Setup ====
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{
+  unicode=true,
+  pdftitle={Meeting Presentation},
+  pdfauthor={Est\'eban Nocet-Binois},
+  colorlinks=true,
+  breaklinks=true,
+  urlcolor=linkcolour,
+  linkcolor=linkcolour
+}
+
+\captionsetup[figure]{labelformat=empty,justification=justified, width=0.7\textwidth}
